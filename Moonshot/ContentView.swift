@@ -19,25 +19,11 @@ struct Address: Codable{
 
 
 struct ContentView: View {
+    
+    let astronauts = Bundle.main.decode("astronauts.json")
+    
     var body: some View {
-        Button("Decode JSON"){
-            let input = """
-                {
-                    "name": "Taylor Swift",
-                    "address": {
-                            "street": "555, Taylor ave",
-                            "city": "NYC"
-                    }
-                }
-                """
-            
-            let data = Data(input.utf8)
-            let decoder = JSONDecoder()
-            
-            if let user = try? decoder.decode(User.self, from: data){
-                print(user.address.street)
-            }
-        }
+        Text(String(astronauts.count))
     }
 }
 
