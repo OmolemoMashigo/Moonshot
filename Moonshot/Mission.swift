@@ -6,3 +6,25 @@
 //
 
 import Foundation
+
+struct Mission: Codable, Identifiable{
+    struct Crew: Codable{
+        let name: String
+        let role: String
+    }
+    
+    let id: Int
+    let launchDate: String?
+    let crew: [Crew]
+    let description: String
+    
+    var displayName: String{
+        "Apollo \(id)"
+    }
+    
+    var image: String{
+        "apollo\(id)"
+    }
+}
+
+
