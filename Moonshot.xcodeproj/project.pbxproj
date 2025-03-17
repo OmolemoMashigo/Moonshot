@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AFA3DC632D86004300740F1A /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3DC622D86004300740F1A /* AstronautView.swift */; };
+		AFA3DC652D860ABB00740F1A /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3DC642D860ABB00740F1A /* CustomDivider.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AFA3DC292D80AEC600740F1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		AFA3DC182D80AEC200740F1A /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA3DC282D80AEC600740F1A /* MoonshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA3DC322D80AEC600740F1A /* MoonshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA3DC622D86004300740F1A /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		AFA3DC642D860ABB00740F1A /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		AFA3DC0F2D80AEC200740F1A = {
 			isa = PBXGroup;
 			children = (
+				AFA3DC642D860ABB00740F1A /* CustomDivider.swift */,
+				AFA3DC622D86004300740F1A /* AstronautView.swift */,
 				AFA3DC1A2D80AEC200740F1A /* Moonshot */,
 				AFA3DC2B2D80AEC600740F1A /* MoonshotTests */,
 				AFA3DC352D80AEC600740F1A /* MoonshotUITests */,
@@ -236,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA3DC632D86004300740F1A /* AstronautView.swift in Sources */,
+				AFA3DC652D860ABB00740F1A /* CustomDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

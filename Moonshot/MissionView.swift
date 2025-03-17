@@ -29,14 +29,13 @@ struct MissionView: View {
                     .containerRelativeFrame(.horizontal){ width, axis in
                         width * 0.6
                     }
-                
+                    .padding()
+                Text(mission.formattedLaunchDate)
+                    .font(.subheadline)
                 
                 VStack(alignment: .leading){
                     
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
+                    CustomDivider()
                     
                     Text("Mission highlights")
                         .font(.title.bold())
@@ -44,10 +43,7 @@ struct MissionView: View {
                     
                     Text(mission.description)
                     
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
+                    CustomDivider()
                     
                     Text("Crew")
                         .font(.title.bold())
@@ -59,7 +55,7 @@ struct MissionView: View {
                     HStack{
                         ForEach(crew, id: \.role){ crewMember in
                             NavigationLink{
-                                Text("Astronaut details")
+                                AstronautView(astronaut: crewMember.astronaut)
                             } label: {
                                 HStack{
                                     Image(crewMember.astronaut.id)
@@ -111,6 +107,6 @@ struct MissionView: View {
     let missions: [Mission] = Bundle.main.decode("missions.json")
     let astronauts: [String: Astronauts] = Bundle.main.decode("astronauts.json")
     
-    return MissionView(mission: missions[0], astronauts: astronauts)
+    return MissionView(mission: missions[1], astronauts: astronauts)
         .preferredColorScheme(.dark )
 }
