@@ -11,3 +11,12 @@ This app showcases NASA's Apollo mission data in an interactive interface, demon
 - Clean, responsive UI built entirely with SwiftUI
 
 - Demonstrates navigation, JSON decoding, and custom SwiftUI components
+
+## Technical Highlights
+- Implements Codable for JSON parsing of mission data
+
+- Features custom view layouts and adaptive design
+
+- Demonstrates navigation patterns in SwiftUI
+
+- Shows how to organize complex SwiftUI projects
