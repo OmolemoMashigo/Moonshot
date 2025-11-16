@@ -1,4 +1,4 @@
-# Moonshot
+# Moonshot 🚀🌔
 This app showcases NASA's Apollo mission data in an interactive interface, demonstrating key SwiftUI concepts
 
 ## Features
